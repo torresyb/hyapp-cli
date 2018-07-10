@@ -1,0 +1,30 @@
+{
+  "name": "hyapp-cli",
+  "version": "1.0.0",
+  "description": "\"hyapp-cli\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "hybrid-app"
+  ],
+  "author": "'yangb@2345.com'",
+  "license": "MIT",
+  "bin": {
+    "hyapp": "bin/hyapp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:torresyb/hyapp-cli.git"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.16.0",
+    "git-clone": "^0.1.0",
+    "handlebars": "^4.0.11",
+    "inquirer": "^6.0.0",
+    "ora": "^2.1.0",
+    "rimraf": "^2.6.2"
+  }
+}
