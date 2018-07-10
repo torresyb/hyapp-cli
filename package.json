@@ -1,7 +1,7 @@
 {
   "name": "hyapp-cli",
-  "version": "1.0.0",
-  "description": "\"hyapp-cli\"",
+  "version": "1.0.2",
+  "description": "hyapp-cli",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git@github.com:torresyb/hyapp-cli.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.16.0",
     "git-clone": "^0.1.0",

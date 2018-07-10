@@ -47,7 +47,7 @@ module.exports = async function create(template, projectName) {
  */
 function downloadTemplate(template, templateDir) {
   const templateList = {
-    'hyapp-template': 'torresyb/hyapp-template'
+    'hyapp-template': 'https://github.com/torresyb/hyapp-template'
   }
 
   if(!templateList.hasOwnProperty(template)){
