@@ -13,9 +13,9 @@ const chalk = require('chalk')
 const path = require('path')
 
 module.exports = async function create(template, projectName) {
-  const targetDir = path.resource(process.cwd(), projectName)
+  const targetDir = path.resolve(process.cwd(), projectName)
   if(fs.existsSync(targetDir)){
-    const {action} await inquirer.prompt([{
+    const {action} = await inquirer.prompt([{
       name: 'action',
       type: 'list',
       message: `Target directory ${chalk.cyan(targetDir)} already exists. Pick an action:`,
@@ -47,7 +47,7 @@ module.exports = async function create(template, projectName) {
  */
 function downloadTemplate(template, templateDir) {
   const templateList = {
-    'hyapp-template': 'https://github.com/torresyb/hyapp-template'
+    'hyapp-template': 'hyapp-template'
   }
 
   if(!templateList.hasOwnProperty(template)){

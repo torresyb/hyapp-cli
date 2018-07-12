@@ -3,7 +3,7 @@
 const program = require('commander') // 命令
 const chalk = require('chalk')
 
-const config = require('./package.json')
+const config = require('../package')
 
 const create = require('./utils')
 
