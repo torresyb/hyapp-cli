@@ -47,7 +47,7 @@ module.exports = async function create(template, projectName) {
  */
 function downloadTemplate(template, templateDir) {
   const templateList = {
-    'hyapp-template': 'hyapp-template'
+    'hyapp-template': 'https://github.com/torresyb/hyapp-template'
   }
 
   if(!templateList.hasOwnProperty(template)){
@@ -63,7 +63,7 @@ function downloadTemplate(template, templateDir) {
     }, err => {
       spinner.stop()
       if(err){
-        console.log(chalk.red(`Failed to download ${template}! ${err.message.trime()}`))
+        console.log(chalk.red(`Failed to download ${template}! ${err.message.trim()}`))
       }
       resolve()
     })
